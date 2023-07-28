@@ -1,0 +1,148 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --primario: #fff;
+    --secundario2: #c0c0c0;
+    --secundario: #494949;
+    --secundarioOscuro: #7d7d7d;
+    --fondo:#1b1b1b;
+    
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+
+    color: var(--primario);
+}
+
+p{
+    color: var(--primario);
+}
+
+a{
+    color: var(--primario);
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+
+
+
+.titulo{
+    margin-top: 0;
+    padding-top: 3rem;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-image: url(/Img/desarrollo-web.png);
+}
+
+@media (min-width: 768px) {
+    .barra_nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 4rem;
+    background-color: var(--secundario);
+    }    
+}
+@media (max-width: 767px) {
+    .barra_nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        gap: 1rem;
+        background-color: var(--secundario);     
+    }
+        
+}
+
+.barra_nav__enlace{
+    color: var(--primario);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+.contenido{
+    background-color: #602f68;
+    margin: 2rem 5rem 2rem 5rem;
+    padding: 0 2rem 2rem 2rem;
+    border-radius: 3rem;
+}
+
+.articulo{
+    margin: 2rem 5rem 1rem 5rem;
+    padding: 0.5rem 2rem 2rem 2rem;
+    background-color: #2c5c9a;
+    border-radius: 3rem;
+}
+
+footer{
+    text-align: center;
+    background-color: #494949;/*Define el color de fondo*/
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 1rem 0;
+}
+
+.submit{
+    background-color: var(--secundario2);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--funetePrincipal);
+    padding: 2rem;
+    transition: background-color .3s ease;
+    border-radius: 1rem;
+
+}
+
+.submit:hover{
+    cursor: pointer;
+    background-color: var(--secundarioOscuro);
+}
+
+
+
+body{
+    background-color: var(--fondo);
+}
